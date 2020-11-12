@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+#blog{
+    background-color: black;
+    width: 100%;
+    color:white;
+    padding: 60px 0px;
+  }
+  .blog-heading{
+      align-items: center;
+      text-align: center;
+      width: 70%;
+      margin: auto;
+  }
+  .blog-heading h2{
+      font-size: 35px;
+    }
+  .blogs{
+      padding:100px 15px;
+      background-color: #ffffff;
+  }
+  .blog-container{
+    width: 90%;
+    margin:50px auto;
+  }
+  .blogs .blogs-content{
+      flex: 0 0 100%;
+    width: 90%;
+    z-index: 0;
+    margin: auto;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+  .blogs .blogs-content .box{
+    background-color: rgb(20, 20, 20);
+    padding: 25px;
+    border-radius: 10px;
+    margin: 0px 30px;
+  }
+  .blogs .blogs-content .box .img{
+      overflow: hidden;
+  }
+  .blogs .blogs-content .box .img img{
+   width: 100%;
+   display: block;
+   transition: all .5s ease;
+  }
+  .blogs .blogs-content .box:hover .img img{
+     transform: scale(1.1);
+  }
+  .blogs .blogs-content .box .info {
+      padding:10px 0;
+  }
+  .blogs .blogs-content .box .info span{
+      font-size: 16px;
+      color:#ffffff;
+      display: inline-block;
+  }
+  .blogs .blogs-content .box .info span:nth-child(2){
+     border-left:1px solid #dddddd;
+     padding-left:8px;
+     margin-left:10px;
+  }
+  .blogs .blogs-content .box h3{
+      font-size:18px;
+      font-weight:600;
+      color:#ffffff;
+      margin:0 0 10px;
+      padding:0;
+  
+  }
+  .blogs .blogs-content .box p{
+   font-size: 16px;
+   line-height:24px;
+   color:#ffffff;
+   margin:0 0 10px;
+  }
+  .blogs .blogs-content .box a{
+      font-size: 16px;
+      color: white;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: inline-block;
+      border-bottom: 2px solid rgb(255, 255, 255);
+      -webkit-transition: all .5s ease;
+      transition: all .5s ease;
+  }
+  
+  .blogs .blogs-content .box a:hover{
+      color:#000000;
+      border-color: #000000;
+  }
+  .blog-base-title a{
+    text-decoration: none;
+    color: #fff;
+    float: right;
+    font-size: 22px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    font-weight: bolder;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color:rgb(255, 255, 255);
+    text-transform: uppercase;
+  }
+  

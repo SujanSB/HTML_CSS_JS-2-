@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section{
+    margin: auto;
+    padding: 50px;
+    width: 90%;
+}
+section h1{
+    font-size: 30px;
+    align-items: center;
+    text-align: center;
+}
+section .upper-image{
+    height: 80vh;
+    background-color: indigo;
+}
+
+.single-part .row{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    width: 60%;
+    margin: auto;
+
+}
+.single-part .row .one,.two,.three{
+    margin:30px;
+    padding: 10px;
+    box-shadow:0 0 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius:50% 50% 60% 80% 70% 30%;
+
+}
+
+
+
+
+/* -nav */
+/* Home ,bout,Skills ,Work,Testimonials,Footer */

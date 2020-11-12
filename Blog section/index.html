@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog section</title>
+    <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+</head>
+<body>
+    
+<section class="blogs" id="blog">
+    <div class="blog-heading">
+       <h2>Recent Blogs,</h2>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem est nam nostrum! Optio praesentium dolor fugiat, saepe necessitatibus unde, ea, ab rerum hic accusamus quasi molestias quod esse magni. Velit.</p>
+    </div>
+    <div class="blog-container">
+        <div class="row">
+            <div class="blogs-content owl-carousel">
+                <div class="box">
+                    <div class="img">
+                      <img src="https://cdn.pixabay.com/photo/2014/09/05/18/32/old-books-436498__340.jpg" alt="blog" />
+                    </div>
+                    <div class="info">
+                       <span>2 june 2020</span> <span>Design</span>
+                    </div>
+                    <h3>Javascript is Mandatory</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    <a href="">Read More</a>
+                </div>
+                <div class="box">
+                    <div class="img">
+                      <img src=" https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849826__340.jpg" alt="blog" />
+                    </div>
+                    <div class="info">
+                       <span>2 jan 2021</span> <span>Design</span>
+                    </div>
+                    <h3>Make Your Marketing Website</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    <a href="">Read More</a>
+                </div>
+                <div class="box">
+                    <div class="img">
+                      <img src=" https://cdn.pixabay.com/photo/2015/07/17/22/42/startup-849805__340.jpg" alt="blog" />
+                    </div>
+                    <div class="info">
+                       <span>2 Mar 2020</span> <span>Design</span>
+                    </div>
+                    <h3>Never Give UP, A motivation</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    <a href="">Read More</a>
+                </div>
+                <div class="box">
+                    <div class="img">
+                      <img src=" https://cdn.pixabay.com/photo/2015/05/28/14/38/ux-787980__340.jpg" alt="blog" />
+                    </div>
+                    <div class="info">
+                       <span>2 Mar 2020</span> <span>Design</span>
+                    </div>
+                    <h3>Never Give UP, A motivation</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    <a href="">Read More</a>
+                </div>
+                <div class="box">
+                    <div class="img">
+                      <img src="https://cdn.pixabay.com/photo/2015/01/09/11/11/office-594132__340.jpg" alt="blog" />
+                    </div>
+                    <div class="info">
+                       <span>2 Mar 2020</span> <span>Design</span>
+                    </div>
+                    <h3>Never Give UP, A motivation</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    <a href="">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+  </section>
+ 
+    
+</body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+    $(".blogs-content").owlCarousel({
+  loop: true,
+  margin: 10,
+  lazyLoad: true,
+  autoplay:true,
+  autoplayTimeout:2000,
+  autoplayHoverPause:true,
+  merge: true, 
+  video: true,
+  responsive:{	
+  0:{
+  items:1
+  },
+  
+  678:{
+  items:2
+  },
+  
+  960:{
+  items:3
+  }
+      }
+    });
+    if ($(window).width() <768) {
+      $('.blogs-content').removeClass('.owl-carousel')
+    }
+  </script>
+</html>
